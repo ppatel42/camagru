@@ -1,0 +1,131 @@
+/*@import url(http://fonts.googleapis.com/css?family=Lato);*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+html{
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+  text-decoration: none;
+}
+
+input{
+  padding-left: 10px;
+  background-color: white;
+}
+
+input:focus{
+  outline: none;
+}
+
+input[type="submit"]{
+  height: 30px;
+  text-transform: uppercase;
+}
+
+h1{
+  width: 100%;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+button{
+  position: relative;
+  padding: 0;
+  border: none;
+  background: none;
+  line-height: 50px;
+  background-color: #00DFFC;
+  color: white;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #005F6B;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #005F6B;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: #005F6B;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #005F6B;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #343838;
+}
+
+.centerContainer{
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  margin: 100px auto 100px auto;
+}
+
+.error{
+  width: 100%;
+  height: 15px;
+  text-align: center;
+  color: #EC3434;
+  margin-bottom: 10px;
+}
+
+.clickable:hover{
+  cursor: pointer;
+}
+
+.unsubmitable{
+  opacity: 0.3;
+}
+
+.submitable{
+  opacity: 1;
+}
+
+.submitable:hover{
+  cursor: pointer;
+}
+
+.unclickable + label{
+  opacity: 0.3;
+}
+
+#emptyGallery{
+  color: #00DFFC;
+  font-size: 1.3em;
+}
